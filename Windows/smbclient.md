@@ -31,3 +31,31 @@ smbclient \\\\192.168.1.53\\AD
 コネクションが確立すると以下のようにプロンプトが表示される。
 smb: \>
 ```
+
+# 接続後の主なコマンド
+
+ディレクトリ移動（cd）
+
+ファイル・ディレクトリ一覧表示（dir）
+
+ファイルのダウンロード（get）
+
+指定した条件に一致するファイルをダウンロード（mget）
+```
+#OS\Linux\ML8ディレクトリ内のファイルを全てダウンロード
+prompt
+recurse
+mget "OS\Linux\ML8"
+```
+
+ファイルのアップロード（put）
+```
+#ml8.8.isoをOS\Linux\ML8\MIRACLELINUX-8.8-rtm-x86_64.isoとしてアップロード
+put "ml8.8.iso" "OS\Linux\ML8\MIRACLELINUX-8.8-rtm-x86_64.iso"
+```
+
+ディレクトリの作成（mkdir）（md）
+
+ファイルの削除（del）
+
+条件に一致したファイルやディレクトリの削除（deltree）
