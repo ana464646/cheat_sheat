@@ -39,7 +39,12 @@ nmapのスクリプト(NSEスクリプト)は
 下記に書かれており、grepで使えそうなスクリプトを見てみるのも良い
 /usr/share/nmap/scripts/
 
-例えばsmbポートが空いてる場合どういったNSEスクリプトが使えるか確認したい場合
+例えばSMBポートが空いてる場合どういったNSEスクリプトが使えるか確認したい場合
 ```
 ls /usr/share/nmap/scripts/ | grep smb
+```
+
+SMBに対して、NSEスクリプトを使って脆弱性を見つけたい場合
+```
+nmap --script smb-vuln* -p 139,445 192.168.1.53 -Pn
 ```
