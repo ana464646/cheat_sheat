@@ -50,6 +50,7 @@ nmap --script smb-vuln* -p 445 192.168.1.53 -Pn
 ```
 
 ファイル共有の一覧を列挙 smb-enum-shares.nse
+
 リモートの Windows システム上のユーザーを列挙 smb-enum-users.nse
 ```
 nmap -p 445 --script smb-enum-shares.nse,smb-enum-users.nse 192.168.1.53 -Pn
