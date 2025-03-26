@@ -26,12 +26,17 @@ https://www.kali.org/tools/enum4linux/
 
 # Usage
 
-HTMLでdataフォルダにドメイン情報をダンプ
+共有情報を取得 -S
 
 ```
-python3 
-ldapdomaindump.py
- --user <ドメイン名\\ユーザー名> -p <パスワード> ldap://192.168.1.
-50::389
- --no-json --no-grep -o data
+enum4linux -S 10.10.10.10
 ```
+
+ユーザーの認証情報を取得している場合
+
+```
+enum4linux -u <ユーザー名> -p <パスワード> -a 10.10.10.10
+```
+
+
+
