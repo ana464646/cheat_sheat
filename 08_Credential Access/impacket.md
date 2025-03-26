@@ -50,6 +50,8 @@ python3 GetNPUsers.py <domain_name>/ -usersfile <users_file> -format <AS_REP_res
 python3 GetNPUsers.py -all -dc-ip 10.10.10.10 <ドメイン名>/<ユーザー名>
 ```
 
+
+
 ドメインの委任関係を見つけるためにfindDelegation.pyを使用します。
 findDelegation.pyは、Impacketツールの一部で、ドメイン内の委任関係を見つけるために使用されます。このスクリプトは、無制限の委任、制約付き委任、およびリソースベースの制約付き委任のタイプをクエリして表示します
 
