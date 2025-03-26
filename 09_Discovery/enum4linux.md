@@ -2,39 +2,27 @@
 enum4linuxの基本的な使い方を記載
 
 # Overview
-ldapdomaindumpは、Active Directoryの情報をLDAP（Lightweight Directory Access Protocol）を介して取得するためのツールです。このツールは、認証されたユーザー（またはマシン）がLDAPを使用して内部ネットワークの情報を収集する際に役立ちます。ldapdomaindumpは、LDAPから取得したデータを人間が読みやすいHTML形式や、機械が読み取れるJSON、CSV、TSV、greppableファイル形式で出力します。
+enum4linuxは、WindowsおよびSambaシステムから情報を列挙するためのツールです。このツールは、かつて
+www.bindview.com
+から提供されていたenum.exeと同様の機能を提供することを目的としています。enum4linuxは、主に以下の機能を持っています
 
-主な機能は以下の通りです：
+RIDサイクリング（Windows 2000でRestrictAnonymousが1に設定されている場合）
 
-ドメイン内のすべてのユーザー、グループ、コンピュータ、ポリシーの概要を簡単に把握できる。
-ユーザー名とパスワード、またはNTLMハッシュを使用して認証が可能（ldap3 >=1.3.1が必要）。
-既存の認証済み接続を使用してLDAPサービスに接続し、リレーリングツール（例：impacketのntlmrelayx）と統合可能。
-ldapdomaindumpは、以下のようなファイルを出力します：
+ユーザーリストの取得（Windows 2000でRestrictAnonymousが0に設定されている場合）
 
-domain_groups: ドメイン内のグループのリスト
+グループメンバーシップ情報のリスト
 
-domain_users: ドメイン内のユーザーのリスト
+共有の列挙
 
-domain_computers: ドメイン内のコンピュータアカウントのリスト
+ホストがワークグループまたはドメインに属しているかの検出
 
-domain_policy: パスワード要件やロックアウトポリシーなどのドメインポリシー
+リモートオペレーティングシステムの識別
 
-domain_trusts: ドメイン間の信頼関係とそのプロパティ
+パスワードポリシーの取得（polenumを使用）
 
-また、以下のようなグループ化されたファイルも出力します：
+このツールは、Perlで書かれており、smbclient、rpclient、net、およびnmblookupなどのSambaツールのラッパーとして機能します。Sambaパッケージが依存関係となります
 
-domain_users_by_group: グループごとのドメインユーザー
-
-domain_computers_by_os: オペレーティングシステムごとに分類されたドメインコンピュータ
-
-KaliLinuxに初めからインストールされている。
-
-https://github.com/
-dirkjanm/ldapdomaindump
-
-https://www.kali.org/tools/python-ldapdomaindump/
-
-
+https://www.kali.org/tools/enum4linux/
 
 # Usage
 
