@@ -33,3 +33,13 @@ nmap -Pn 192.168.1.50-55 -p 4000-5000 -O
 ```
 nmap -Pn 192.168.1.50-55 -p 4000-5000 -sV
 ```
+
+# 補足
+nmapのスクリプト(NSEスクリプト)は
+下記に書かれており、grepで使えそうなスクリプトを見てみるのも良い
+/usr/share/nmap/scripts/
+
+例えばsmbポートが空いてる場合どういったNSEスクリプトが使えるか確認したい場合
+```
+ls /usr/share/nmap/scripts/ | grep smb
+```
