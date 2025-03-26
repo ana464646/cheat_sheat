@@ -1,6 +1,7 @@
 # ldapdomaindump
 ldapdomaindumpの基本的な使い方を記載
 
+# Overview
 ldapdomaindumpは、Active Directoryの情報をLDAP（Lightweight Directory Access Protocol）を介して取得するためのツールです。このツールは、認証されたユーザー（またはマシン）がLDAPを使用して内部ネットワークの情報を収集する際に役立ちます。ldapdomaindumpは、LDAPから取得したデータを人間が読みやすいHTML形式や、機械が読み取れるJSON、CSV、TSV、greppableファイル形式で出力します。
 
 主な機能は以下の通りです：
