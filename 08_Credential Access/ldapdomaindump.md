@@ -11,18 +11,22 @@ ldapdomaindumpは、Active Directoryの情報をLDAP（Lightweight Directory Acc
 ldapdomaindumpは、以下のようなファイルを出力します：
 
 domain_groups: ドメイン内のグループのリスト
+
 domain_users: ドメイン内のユーザーのリスト
+
 domain_computers: ドメイン内のコンピュータアカウントのリスト
+
 domain_policy: パスワード要件やロックアウトポリシーなどのドメインポリシー
+
 domain_trusts: ドメイン間の信頼関係とそのプロパティ
+
 また、以下のようなグループ化されたファイルも出力します：
 
 domain_users_by_group: グループごとのドメインユーザー
+
 domain_computers_by_os: オペレーティングシステムごとに分類されたドメインコンピュータ
 
 KaliLinuxに初めからインストールされている。
-
-grep・json・htmlでエクスポートができるが、htmlで出力するのが一番見やすいかも
 
 https://github.com/
 dirkjanm/ldapdomaindump
