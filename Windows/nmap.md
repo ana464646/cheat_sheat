@@ -46,5 +46,5 @@ ls /usr/share/nmap/scripts/ | grep smb
 
 SMBに対して、NSEスクリプトを使って脆弱性を見つけたい場合
 ```
-nmap --script smb-vuln* -p 139,445 192.168.1.53 -Pn
+nmap --script smb-vuln* -p 445 192.168.1.53 -Pn
 ```
