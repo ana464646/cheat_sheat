@@ -1,5 +1,7 @@
 # Gobuster Command Reference
 
+**対応OS**: Linux (Windows上ではWSL2での実行が可能)
+
 ## ディレクトリ列挙（dir モード）
 ```bash
 # 基本的なディレクトリスキャン

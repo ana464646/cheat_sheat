@@ -1,5 +1,7 @@
 # DNSrecon Command Reference
 
+**対応OS**: Linux (Windows上ではWSL2/Python環境での実行が可能)
+
 ## 基本的なDNS列挙
 ```bash
 # 標準的なDNS列挙

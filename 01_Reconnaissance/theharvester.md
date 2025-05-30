@@ -1,5 +1,7 @@
 # theHarvester Command Reference
 
+**対応OS**: Linux (Windows上ではWSL2/Python環境での実行が可能)
+
 ## 基本的な使用方法
 ```bash
 # 基本検索

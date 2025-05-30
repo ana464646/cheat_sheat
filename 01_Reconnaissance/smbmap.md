@@ -1,5 +1,7 @@
 # SMBMap Command Reference
 
+**対応OS**: Linux (Windows上ではWSL2/Python環境での実行が可能)
+
 ## 基本的な列挙
 ```bash
 # 共有の列挙

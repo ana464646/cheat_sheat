@@ -1,5 +1,7 @@
 # Nikto Command Reference
 
+**対応OS**: Linux (Windows上ではWSL2/Perl環境での実行が可能)
+
 ## 基本スキャン
 ```bash
 # 基本的なスキャン
