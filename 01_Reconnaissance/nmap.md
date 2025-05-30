@@ -55,3 +55,67 @@ nmap --script smb-vuln* -p 445 192.168.1.53 -Pn
 ```
 nmap -p 445 --script smb-enum-shares.nse,smb-enum-users.nse 192.168.1.53 -Pn
 ```
+
+# Nmap Command Reference
+
+## 基本スキャン
+```bash
+# 基本的なTCPスキャン
+nmap -sT -p- <target>
+
+# ステルススキャン
+nmap -sS -p- <target>
+
+# バージョン検出
+nmap -sV -p- <target>
+
+# OS検出
+nmap -O <target>
+
+# 全スキャン（OS検出、バージョン検出、スクリプトスキャン）
+nmap -A <target>
+```
+
+## スクリプトスキャン
+```bash
+# 脆弱性スキャン
+nmap --script vuln <target>
+
+# SMBスキャン
+nmap --script smb-* <target>
+
+# SSLスキャン
+nmap --script ssl-* <target>
+```
+
+## 高度なオプション
+```bash
+# UDP スキャン
+nmap -sU -p- <target>
+
+# 特定ポートのスキャン
+nmap -p 80,443,8080 <target>
+
+# 出力オプション
+nmap -oN output.txt <target>  # 通常出力
+nmap -oX output.xml <target>  # XML出力
+nmap -oG output.txt <target>  # Grepable出力
+```
+
+## ステルス設定
+```bash
+# タイミング設定（0-5）
+nmap -T0 <target>  # 最も遅い
+nmap -T5 <target>  # 最も速い
+
+# パケット分割
+nmap -f <target>
+
+# デコイの使用
+nmap -D RND:10 <target>
+```
+
+## 注意事項
+- 過度なスキャンはターゲットシステムに負荷をかける可能性があります
+- 実環境での使用は必ず許可を得てから行ってください
+- ステルススキャンは検知される可能性があります
