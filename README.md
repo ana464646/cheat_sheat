@@ -1,56 +1,71 @@
 # Penetration Testing Cheat Sheet
 
-**DO NOT ABUSE - FOR EDUCATIONAL PURPOSES ONLY**
+このリポジトリは、ペネトレーションテストで使用される様々なツールのコマンドリファレンスをまとめたものです。
+教育目的でのみ使用してください。
 
-A comprehensive collection of penetration testing commands and techniques organized by attack phases. This repository follows the MITRE ATT&CK framework structure.
-
-## Categories Description
+## ディレクトリ構造
 
 ### Initial Phase (01-02)
-- **Reconnaissance**: ネットワークスキャン、情報収集、脆弱性スキャン
-- **Initial Access**: エクスプロイト、フィッシング、初期侵入手法
+- **01_Reconnaissance**: 偵察フェーズのツール群
+  - nmap.md (Windows/Linux/macOS)
+  - masscan.md (Linux)
+  - dnsrecon.md (Linux/Python)
+  - theharvester.md (Linux/Python)
+  - gobuster.md (Linux)
+  - wpscan.md (Linux/Ruby)
+  - nikto.md (Linux/Perl)
+  - smbmap.md (Linux/Python)
+- **02_Initial_Access**: 初期アクセスフェーズのツール群
+  - metasploit.md (Linux優先、Windows可)
+  - set.md (Linux)
+  - powersploit.md (Windows)
 
-### Persistence Phase (04-06)
-- **Persistence**: バックドア、永続化手法、自動実行
-- **Defense Evasion**: アンチウイルス回避、ログ削除、痕跡隠蔽
-- **Credential Access**: パスワード取得、ハッシュ取得、認証情報窃取
+### Persistence Phase (03-06)
+- **03_Privilege_Escalation**: 権限昇格のツール群
+  - linpeas.md (Linux)
+  - winpeas.md (Windows)
+- **04_Persistence**: 永続化のツール群
+- **05_Defense_Evasion**: 検知回避のツール群
+- **06_Credential_Access**: 認証情報取得のツール群
 
 ### Movement Phase (07-08)
-- **Discovery**: ネットワーク探索、ホスト列挙、サービス特定
-- **Command And Control**: C2通信、遠隔操作、通信制御
+- **07_Lateral_Movement**: 横展開のツール群
+  - mimikatz.md (Windows)
+- **08_Collection**: データ収集のツール群
 
 ### Advanced Techniques (15-20)
-- **Active Directory**: ドメイン攻撃、Kerberos攻撃、DCSync
-- **Cloud Infrastructure**: クラウドサービス攻撃、コンテナ攻撃
-- **Lateral Movement**: 内部移動、リモート実行、アカウント利用
-- **Network Pivoting**: トンネリング、プロキシ、中継攻撃
-- **Data Exfiltration**: データ窃取、隠れチャネル、ステガノグラフィ
-- **Wireless Attacks**: WiFi攻撃、Bluetooth攻撃、無線LAN攻撃
+- **09_Active_Directory_Attacks**: Active Directory攻撃のツール群
+  - bloodhound.md (Windows/Linux)
+- **15_Wireless_Attacks**: 無線攻撃のツール群
+- **16_Web_Application**: Webアプリケーション攻撃のツール群
+- **17_Mobile_Analysis**: モバイルアプリケーション解析のツール群
+- **18_Reverse_Engineering**: リバースエンジニアリングのツール群
+- **19_Malware_Analysis**: マルウェア解析のツール群
+- **20_IoT_Security**: IoTセキュリティのツール群
 
-## Usage Guidelines
+## 使用方法
 
-### 基本的な使用方法
-1. 各ディレクトリには詳細な技術解説とコマンド例が含まれています
-2. Windows/Linuxそれぞれの環境に特化した手法を参照できます
-3. コマンドは実行前に内容を理解し、影響を確認してください
-4. テスト環境での実行を強く推奨します
+1. 各ツールのマークダウンファイルには以下の情報が含まれています：
+   - 対応OS情報
+   - 基本的な使用方法
+   - よく使用するオプション
+   - 高度な設定オプション
+   - 注意事項
 
-### 注意事項
+2. 必要なツールのドキュメントに移動し、目的の操作に関する情報を参照してください。
+
+## 注意事項
+
 - このリポジトリは教育目的でのみ使用してください
-- 記載された技術の不正使用は違法となる可能性があります
-- 実環境での使用は必ず許可を得てから行ってください
-- システムに重大な影響を与える可能性のある操作が含まれています
+- 記載されているツールの使用は、許可された環境でのみ行ってください
+- 実環境での使用は法的責任を伴う可能性があります
+- すべてのツールは自己責任で使用してください
 
-## Contribution
+## 貢献
 
-以下の形での貢献を歓迎します：
-- 新しい攻撃手法の追加
-- 既存のドキュメントの改善
-- エラーや誤字の修正
-- 実例やユースケースの追加
+- バグの報告や新しいツールの追加は、Issue/Pull Requestでお願いします
+- ドキュメントの改善提案も歓迎します
 
-プルリクエストを通じて貢献してください。
+## ライセンス
 
-## License
-
-This project is licensed under MIT License - see the LICENSE file for details.
+このプロジェクトはMITライセンスの下で公開されています。
