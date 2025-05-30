@@ -1,5 +1,7 @@
 # Masscan Command Reference
 
+**対応OS**: Linux (Windows上ではWSL2での実行を推奨)
+
 ## 基本スキャン
 ```bash
 # 全ポートスキャン

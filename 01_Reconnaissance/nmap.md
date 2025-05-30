@@ -58,6 +58,8 @@ nmap -p 445 --script smb-enum-shares.nse,smb-enum-users.nse 192.168.1.53 -Pn
 
 # Nmap Command Reference
 
+**対応OS**: Windows, Linux, macOS
+
 ## 基本スキャン
 ```bash
 # 基本的なTCPスキャン
