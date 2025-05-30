@@ -7,47 +7,99 @@ A comprehensive collection of penetration testing commands and techniques organi
 ## Structure
 
 ```
-├── 01_Reconnaissance/          # Information gathering techniques
-├── 02_Initial_Access/         # Initial system access methods
-├── 03_Privilege_Escalation/   # Privilege escalation techniques
-├── 04_Persistence/           # Maintaining system access
-├── 05_Defense_Evasion/       # AV/EDR evasion techniques
-├── 06_Credential_Access/     # Password and credential theft
-├── 07_Discovery/             # System and network discovery
-└── 08_Command_And_Control/   # C2 communication methods
+├── 01_Reconnaissance/          # 情報収集技術
+│   ├── Windows/               # Windows環境での情報収集
+│   └── Linux/                 # Linux環境での情報収集
+├── 02_Initial_Access/         # 初期アクセス手法
+│   ├── Windows/               # Windows環境での初期アクセス
+│   └── Linux/                 # Linux環境での初期アクセス
+├── 03_Privilege_Escalation/   # 権限昇格技術
+│   ├── Windows/               # Windows権限昇格
+│   └── Linux/                 # Linux権限昇格
+├── 04_Persistence/            # 永続化手法
+│   ├── Windows/               # Windows永続化
+│   └── Linux/                 # Linux永続化
+├── 05_Defense_Evasion/        # 防御回避技術
+│   ├── Windows/               # Windows防御回避
+│   └── Linux/                 # Linux防御回避
+├── 06_Credential_Access/      # 認証情報取得
+│   ├── Windows/               # Windows認証情報
+│   └── Linux/                 # Linux認証情報
+├── 07_Discovery/              # システム探索
+│   ├── Windows/               # Windows探索
+│   └── Linux/                 # Linux探索
+├── 08_Lateral_Movement/       # 横展開手法
+│   ├── Windows/               # Windows横展開
+│   └── Linux/                 # Linux横展開
+├── 09_Command_And_Control/    # C2通信手法
+│   ├── Windows/               # WindowsでのC2
+│   └── Linux/                 # LinuxでのC2
+├── 10_Active_Directory/       # Active Directory攻撃
+│   ├── Enumeration/          # AD列挙
+│   ├── Exploitation/         # AD脆弱性攻撃
+│   └── Post_Exploitation/    # AD権限維持
+├── 11_Cloud_Infrastructure/   # クラウド環境攻撃
+│   ├── AWS/                  # AWS攻撃手法
+│   ├── Azure/                # Azure攻撃手法
+│   └── GCP/                  # GCP攻撃手法
+├── 12_Network_Pivoting/       # ネットワークピボット
+│   ├── Tunneling/            # トンネリング手法
+│   └── Proxy_Chains/         # プロキシチェーン
+├── 13_Data_Exfiltration/     # データ窃取手法
+│   ├── Covert_Channels/      # 隠れチャネル
+│   └── Staging/              # データステージング
+└── 14_Wireless_Attacks/      # 無線ネットワーク攻撃
+    ├── WiFi/                 # WiFi攻撃手法
+    └── Bluetooth/            # Bluetooth攻撃手法
 ```
 
-## Categories
+## Categories Description
 
-Each category contains techniques for both Windows and Linux environments:
+### Initial Phase (01-03)
+- **Reconnaissance**: ネットワークスキャン、情報収集、脆弱性スキャン
+- **Initial Access**: エクスプロイト、フィッシング、初期侵入手法
+- **Privilege Escalation**: 権限昇格、脆弱性悪用、特権取得
 
-- Information gathering and scanning
-- Vulnerability assessment
-- Exploitation techniques
-- Post-exploitation methods
-- Lateral movement
-- Data exfiltration
+### Persistence Phase (04-06)
+- **Persistence**: バックドア、永続化手法、自動実行
+- **Defense Evasion**: アンチウイルス回避、ログ削除、痕跡隠蔽
+- **Credential Access**: パスワード取得、ハッシュ取得、認証情報窃取
 
-## Usage
+### Movement Phase (07-09)
+- **Discovery**: ネットワーク探索、ホスト列挙、サービス特定
+- **Lateral Movement**: 内部移動、リモート実行、アカウント利用
+- **Command And Control**: C2通信、遠隔操作、通信制御
 
-- Each directory contains specific techniques and commands
-- Commands are documented with explanations and examples
-- Always check the compatibility and requirements before using any tool
-- Test in authorized environments only
+### Advanced Techniques (10-14)
+- **Active Directory**: ドメイン攻撃、Kerberos攻撃、DCSync
+- **Cloud Infrastructure**: クラウドサービス攻撃、コンテナ攻撃
+- **Network Pivoting**: トンネリング、プロキシ、中継攻撃
+- **Data Exfiltration**: データ窃取、隠れチャネル、ステガノグラフィ
+- **Wireless Attacks**: WiFi攻撃、Bluetooth攻撃、無線LAN攻撃
+
+## Usage Guidelines
+
+### 基本的な使用方法
+1. 各ディレクトリには詳細な技術解説とコマンド例が含まれています
+2. Windows/Linuxそれぞれの環境に特化した手法を参照できます
+3. コマンドは実行前に内容を理解し、影響を確認してください
+4. テスト環境での実行を強く推奨します
+
+### 注意事項
+- このリポジトリは教育目的でのみ使用してください
+- 記載された技術の不正使用は違法となる可能性があります
+- 実環境での使用は必ず許可を得てから行ってください
+- システムに重大な影響を与える可能性のある操作が含まれています
 
 ## Contribution
 
-Feel free to contribute by:
-- Adding new techniques
-- Improving existing documentation
-- Fixing errors or typos
-- Adding more examples
+以下の形での貢献を歓迎します：
+- 新しい攻撃手法の追加
+- 既存のドキュメントの改善
+- エラーや誤字の修正
+- 実例やユースケースの追加
 
-Please submit your contributions via Pull Requests.
-
-## Disclaimer
-
-This repository is for educational purposes only. The techniques and commands documented here should only be used in authorized environments. Any misuse or illegal application of these techniques is strictly prohibited.
+プルリクエストを通じて貢献してください。
 
 ## License
 
