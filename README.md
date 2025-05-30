@@ -4,75 +4,25 @@
 
 A comprehensive collection of penetration testing commands and techniques organized by attack phases. This repository follows the MITRE ATT&CK framework structure.
 
-## Structure
-
-```
-├── 01_Reconnaissance/          # 情報収集技術
-│   ├── Windows/               # Windows環境での情報収集
-│   └── Linux/                 # Linux環境での情報収集
-├── 02_Initial_Access/         # 初期アクセス手法
-│   ├── Windows/               # Windows環境での初期アクセス
-│   └── Linux/                 # Linux環境での初期アクセス
-├── 03_Privilege_Escalation/   # 権限昇格技術
-│   ├── Windows/               # Windows権限昇格
-│   └── Linux/                 # Linux権限昇格
-├── 04_Persistence/            # 永続化手法
-│   ├── Windows/               # Windows永続化
-│   └── Linux/                 # Linux永続化
-├── 05_Defense_Evasion/        # 防御回避技術
-│   ├── Windows/               # Windows防御回避
-│   └── Linux/                 # Linux防御回避
-├── 06_Credential_Access/      # 認証情報取得
-│   ├── Windows/               # Windows認証情報
-│   └── Linux/                 # Linux認証情報
-├── 07_Discovery/              # システム探索
-│   ├── Windows/               # Windows探索
-│   └── Linux/                 # Linux探索
-├── 08_Lateral_Movement/       # 横展開手法
-│   ├── Windows/               # Windows横展開
-│   └── Linux/                 # Linux横展開
-├── 09_Command_And_Control/    # C2通信手法
-│   ├── Windows/               # WindowsでのC2
-│   └── Linux/                 # LinuxでのC2
-├── 10_Active_Directory/       # Active Directory攻撃
-│   ├── Enumeration/          # AD列挙
-│   ├── Exploitation/         # AD脆弱性攻撃
-│   └── Post_Exploitation/    # AD権限維持
-├── 11_Cloud_Infrastructure/   # クラウド環境攻撃
-│   ├── AWS/                  # AWS攻撃手法
-│   ├── Azure/                # Azure攻撃手法
-│   └── GCP/                  # GCP攻撃手法
-├── 12_Network_Pivoting/       # ネットワークピボット
-│   ├── Tunneling/            # トンネリング手法
-│   └── Proxy_Chains/         # プロキシチェーン
-├── 13_Data_Exfiltration/     # データ窃取手法
-│   ├── Covert_Channels/      # 隠れチャネル
-│   └── Staging/              # データステージング
-└── 14_Wireless_Attacks/      # 無線ネットワーク攻撃
-    ├── WiFi/                 # WiFi攻撃手法
-    └── Bluetooth/            # Bluetooth攻撃手法
-```
-
 ## Categories Description
 
-### Initial Phase (01-03)
+### Initial Phase (01-02)
 - **Reconnaissance**: ネットワークスキャン、情報収集、脆弱性スキャン
 - **Initial Access**: エクスプロイト、フィッシング、初期侵入手法
-- **Privilege Escalation**: 権限昇格、脆弱性悪用、特権取得
 
 ### Persistence Phase (04-06)
 - **Persistence**: バックドア、永続化手法、自動実行
 - **Defense Evasion**: アンチウイルス回避、ログ削除、痕跡隠蔽
 - **Credential Access**: パスワード取得、ハッシュ取得、認証情報窃取
 
-### Movement Phase (07-09)
+### Movement Phase (07-08)
 - **Discovery**: ネットワーク探索、ホスト列挙、サービス特定
-- **Lateral Movement**: 内部移動、リモート実行、アカウント利用
 - **Command And Control**: C2通信、遠隔操作、通信制御
 
-### Advanced Techniques (10-14)
+### Advanced Techniques (15-20)
 - **Active Directory**: ドメイン攻撃、Kerberos攻撃、DCSync
 - **Cloud Infrastructure**: クラウドサービス攻撃、コンテナ攻撃
+- **Lateral Movement**: 内部移動、リモート実行、アカウント利用
 - **Network Pivoting**: トンネリング、プロキシ、中継攻撃
 - **Data Exfiltration**: データ窃取、隠れチャネル、ステガノグラフィ
 - **Wireless Attacks**: WiFi攻撃、Bluetooth攻撃、無線LAN攻撃
