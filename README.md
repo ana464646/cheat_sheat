@@ -22,26 +22,52 @@
 
 ### Persistence Phase (03-06)
 - **03_Privilege_Escalation**: 権限昇格のツール群
-  - linpeas.md (Linux)
-  - winpeas.md (Windows)
+  - Linux/
+    - linpeas.md
+  - Windows/
+    - winpeas.md
 - **04_Persistence**: 永続化のツール群
+  - Linux/
+  - Windows/
 - **05_Defense_Evasion**: 検知回避のツール群
+  - Linux/
+  - Windows/
 - **06_Credential_Access**: 認証情報取得のツール群
+  - Linux/
+  - Windows/
 
 ### Movement Phase (07-08)
 - **07_Lateral_Movement**: 横展開のツール群
-  - mimikatz.md (Windows)
+  - Linux/
+  - Windows/
+    - mimikatz.md
 - **08_Collection**: データ収集のツール群
+  - Linux/
+  - Windows/
 
-### Advanced Techniques (15-20)
+### Advanced Techniques (09-20)
 - **09_Active_Directory_Attacks**: Active Directory攻撃のツール群
-  - bloodhound.md (Windows/Linux)
+  - Linux/
+  - Windows/
+    - bloodhound.md
 - **15_Wireless_Attacks**: 無線攻撃のツール群
+  - Linux/
+  - Windows/
 - **16_Web_Application**: Webアプリケーション攻撃のツール群
+  - Linux/
+  - Windows/
 - **17_Mobile_Analysis**: モバイルアプリケーション解析のツール群
+  - Linux/
+  - Windows/
 - **18_Reverse_Engineering**: リバースエンジニアリングのツール群
+  - Linux/
+  - Windows/
 - **19_Malware_Analysis**: マルウェア解析のツール群
+  - Linux/
+  - Windows/
 - **20_IoT_Security**: IoTセキュリティのツール群
+  - Linux/
+  - Windows/
 
 ## 使用方法
 
