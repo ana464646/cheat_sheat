@@ -1,12 +1,12 @@
 # Penetration Testing Cheat Sheet
 
-このリポジトリは、ペネトレーションテストで使用される様々なツールのコマンドリファレンスをまとめたものです。
-教育目的でのみ使用してください。
+This repository is a collection of command references for various tools used in penetration testing.
+For educational purposes only.
 
-## ディレクトリ構造
+## Directory Structure
 
 ### Initial Phase (01-02)
-- **01_Reconnaissance**: 偵察フェーズのツール群
+- **01_Reconnaissance**: Reconnaissance phase tools
   - nmap.md (Windows/Linux/macOS)
   - masscan.md (Linux)
   - dnsrecon.md (Linux/Python)
@@ -15,83 +15,83 @@
   - wpscan.md (Linux/Ruby)
   - nikto.md (Linux/Perl)
   - smbmap.md (Linux/Python)
-- **02_Initial_Access**: 初期アクセスフェーズのツール群
-  - metasploit.md (Linux優先、Windows可)
+- **02_Initial_Access**: Initial access phase tools
+  - metasploit.md (Linux preferred, Windows possible)
   - set.md (Linux)
   - powersploit.md (Windows)
 
 ### Persistence Phase (03-06)
-- **03_Privilege_Escalation**: 権限昇格のツール群
+- **03_Privilege_Escalation**: Privilege escalation tools
   - Linux/
     - linpeas.md
   - Windows/
     - winpeas.md
-- **04_Persistence**: 永続化のツール群
+- **04_Persistence**: Persistence tools
   - Linux/
   - Windows/
-- **05_Defense_Evasion**: 検知回避のツール群
+- **05_Defense_Evasion**: Defense evasion tools
   - Linux/
   - Windows/
-- **06_Credential_Access**: 認証情報取得のツール群
+- **06_Credential_Access**: Credential access tools
   - Linux/
   - Windows/
 
 ### Movement Phase (07-08)
-- **07_Lateral_Movement**: 横展開のツール群
+- **07_Lateral_Movement**: Lateral movement tools
   - Linux/
   - Windows/
     - mimikatz.md
-- **08_Collection**: データ収集のツール群
+- **08_Collection**: Data collection tools
   - Linux/
   - Windows/
 
 ### Advanced Techniques (09-20)
-- **09_Active_Directory_Attacks**: Active Directory攻撃のツール群
+- **09_Active_Directory_Attacks**: Active Directory attack tools
   - Linux/
   - Windows/
     - bloodhound.md
-- **15_Wireless_Attacks**: 無線攻撃のツール群
+- **15_Wireless_Attacks**: Wireless attack tools
   - Linux/
   - Windows/
-- **16_Web_Application**: Webアプリケーション攻撃のツール群
+- **16_Web_Application**: Web application attack tools
   - Linux/
   - Windows/
-- **17_Mobile_Analysis**: モバイルアプリケーション解析のツール群
+- **17_Mobile_Analysis**: Mobile application analysis tools
   - Linux/
   - Windows/
-- **18_Reverse_Engineering**: リバースエンジニアリングのツール群
+- **18_Reverse_Engineering**: Reverse engineering tools
   - Linux/
   - Windows/
-- **19_Malware_Analysis**: マルウェア解析のツール群
+- **19_Malware_Analysis**: Malware analysis tools
   - Linux/
   - Windows/
-- **20_IoT_Security**: IoTセキュリティのツール群
+- **20_IoT_Security**: IoT security tools
   - Linux/
   - Windows/
 
-## 使用方法
+## How to Use
 
-1. 各ツールのマークダウンファイルには以下の情報が含まれています：
-   - 対応OS情報
-   - 基本的な使用方法
-   - よく使用するオプション
-   - 高度な設定オプション
-   - 注意事項
+1. Each tool's markdown file contains the following information:
+   - Compatible operating systems
+   - Basic usage
+   - Commonly used options
+   - Advanced configuration options
+   - Important notes and cautions
 
-2. 必要なツールのドキュメントに移動し、目的の操作に関する情報を参照してください。
+2. Navigate to the documentation for the tool you need and refer to the relevant operation information.
 
-## 注意事項
+## Important Notes
 
-- このリポジトリは教育目的でのみ使用してください
-- 記載されているツールの使用は、許可された環境でのみ行ってください
-- 実環境での使用は法的責任を伴う可能性があります
-- すべてのツールは自己責任で使用してください
+- This repository is for educational purposes only
+- Use the tools only in authorized environments
+- Usage in production environments may carry legal responsibilities
+- All tools are to be used at your own risk
 
-## 貢献
+## Contributing
 
-- バグの報告や新しいツールの追加は、Issue/Pull Requestでお願いします
-- ドキュメントの改善提案も歓迎します
+- Please submit bug reports and new tool additions via Issues/Pull Requests
+- Documentation improvement suggestions are welcome
 
-## ライセンス
+## License
 
-このプロジェクトはMITライセンスの下で公開されています。
+This project is released under the MIT License.
